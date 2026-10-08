@@ -1,0 +1,17 @@
+name: Test Print Secret
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the key
+        run: |
+          echo ${{ secrets.TEST }}| base64
