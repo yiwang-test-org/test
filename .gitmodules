@@ -1,0 +1,4 @@
+[submodule "test2"]
+	path = test2
+	url = https://github.com/yiwang-test-org/test2.git
+	branch = main
