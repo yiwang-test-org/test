@@ -1,0 +1,14 @@
+[project]
+name = "dependency-graph-uv"
+version = "0.1.0"
+description = "uv fixture for the GitHub Dependency Graph"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "httpx>=0.27,<1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+]
