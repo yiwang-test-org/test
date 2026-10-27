@@ -1,0 +1,17 @@
+# Inventory fixture: the Pipfile was bumped without running `pipenv lock`,
+# so Pipfile.lock still pins httpx 0.28.1 and has no ruff.
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+httpx = "~=0.29.0"
+pyyaml = ">=6,<7"
+
+[dev-packages]
+pytest = ">=8,<9"
+ruff = "==0.14.0"
+
+[requires]
+python_version = "3.12"
